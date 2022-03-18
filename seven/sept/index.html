@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>WEB DESIGN I</title>
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!--
+        <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Italiana|Maven+Pro|Nunito|Quattrocento+Sans|Varela+Round|Work+Sans" rel="stylesheet">
+        -->
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">    <!-- Printing and PDF exports -->
+        <script>
+        var link = document.createElement( 'link' );
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css';
+                    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+                    document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+        <style type='text/css'>
+        body {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(0deg, #96E6B3, #fff);
+        background-size: 100% 150%;
+        -webkit-animation: Gradient 50s ease infinite;
+        -moz-animation: Gradient 50s ease infinite;
+        animation: Gradient 50s ease infinite;
+        }
+        @-webkit-keyframes Gradient {
+        0% {
+        background-position: 50% 0%
+        }
+        50% {
+        background-position: 50% 100%
+        }
+        100% {
+        background-position: 50% 0%
+        }
+        }
+        @-moz-keyframes Gradient {
+        0% {
+        background-position: 50% 0%
+        }
+        50% {
+        background-position: 50% 100%
+        }
+        100% {
+        background-position: 50% 0%
+        }
+        }
+        @keyframes Gradient {
+        0% {
+        background-position: 50% 0%
+        }
+        50% {
+        background-position: 50% 100%
+        }
+        100% {
+        background-position: 50% 0%
+        }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+
+      <section data-background-transition="slide" data-background="">
+                    
+
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub4><br><br><a href = "../index.html">
+        WEB DESIGN I</sub4> <i>ON THE MAC</i>
+                            </a>
+        </p>
+
+        <h2> HTML 5 </h2>
+
+        <p><br><br><br>
+        <sub2>HTML stands for Hyper Text Markup Language</sub2>
+            <br><br>
+HTML is the standard markup language for creating Web pages
+            <br><br><sub2>
+HTML describes the structure of a Web page
+            </sub2><br><br>
+HTML consists of a series of elements
+            <br><br><sub2>
+HTML elements tell the browser how to display 
+the content
+           </sub2><br><br>
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+        </p>
+        <br><br>
+       
+        </section>
+
+        <!--section 2-->
+
+        <section data-background-transition="slide" data-background="">
+            
+        <pre>
+  <code>
+
+<!--EXAMPLE OF A BASIC HTML STRUCTURE-->   
+
+<!--The <!DOCTYPE html> declaration defines that this document is an HTML5 document-->
+< !DOCTYPE html >
+<!--The <html> element is the root element of an HTML page-->
+< html >
+<!--The <head> element contains meta information about the HTML page-->
+< head >
+    <!-- we need to link our style.css file in the head of our html document! -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+<!--The <title> element specifies a title for the HTML page 
+    (which is shown in the browser's title bar or in the page's tab)-->
+<title>Page Title</title>
+< /head >
+<!--The <body> element defines the document's body, and is a container for all 
+the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+-->
+< body >
+<!--The <h1> element defines a large heading-->
+<h1>My First Heading</h1>
+<!--The <p> element defines a paragraph-->
+<p>My first paragraph.</p>
+
+< /body >
+< /html >
+
+  </code>
+</pre>
+
+        </section>
+
+        
+      <section data-background-transition="slide" data-background="">
+                    
+
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub4><br><br><a href = "../index.html">
+        WEB DESIGN I</sub4> <i>ON THE MAC</i>
+                            </a>
+        </p>
+
+        <h2> CSS </h2>
+
+        <p><br><br><br>
+        <sub2>CSS stands for Cascading Style Sheets</sub2>
+            <br><br>
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work.
+<br><br>
+<sub2>
+It can control the layout of multiple web pages all at once.</sub2>
+<br><br>
+External stylesheets are stored in CSS files.
+<br><br>
+<sub2>
+CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+</sub2>
+</p>
+        <br><br>
+       
+        </section>
+
+        <!--section 2-->
+
+        <section data-background-transition="slide" data-background="">
+            
+        <pre>
+  <code>
+
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+p {
+    padding-left: 16px
+}
+
+h2 {
+  font-size: 24px;
+  padding-left: 16px
+}
+
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #96e6b3;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: red;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #96e6b3;
+  color: white;
+}
+
+  </code>
+</pre>
+
+        </section>
+
+      <section data-background-transition="slide" data-background="">
+                    
+
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub4><br><br><a href = "../index.html">
+        WEB DESIGN I</sub4> <i>ON THE MAC</i>
+                            </a>
+        </p>
+
+        <h2> HTML Zoom In </h2>
+
+        <p><br><br><br>
+
+<sub2>HTML</sub2> is not a programming language; it is a markup language that defines the structure of your content. HTML consists of <sub2>a series of elements that you will use to enclose different pieces of content so that they look or behave in a certain way.</sub2> Enclosing tags can make a word or image a hyperlink to another site, change words to italics, make fonts larger or smaller, and so on.
+<br><br>
+It is very important to consider that each tag requires opening and closing, e.g.. 
+<pre>
+    <code>
+< body >
+<p> Hello World! </p>
+< /body >
+  </code>
+</pre>
+</p>
+        <br><br>
+       
+        </section>
+
+              <section data-background-transition="slide" data-background="">
+                    
+
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub4><br><br><a href = "../index.html">
+        WEB DESIGN I</sub4> <i>ON THE MAC</i>
+                            </a>
+        </p>
+
+        <h2> CSS Zoom In </h2>
+
+        <p><br><br><br>
+
+Like HTML, <sub2>CSS (Cascading Style Sheets)</sub2> is not really a programming language, nor is it a markup language. <sub2>It is a style sheet language, that is, it allows you to selectively apply styles to elements in HTML documents.</sub2> For example, to select all the paragraph elements in an HTML page and turn the text inside them red, you have to write this CSS:
+<pre>
+    <code>
+p {
+  color: red;
+}
+  </code>
+</pre>
+</p>
+        <br><br>
+       
+        </section>
+
+              <section data-background-transition="slide" data-background="">
+                    
+
+        <p>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub4><br><br><a href = "../index.html">
+        WEB DESIGN I</sub4> <i>ON THE MAC</i>
+                            </a>
+        </p>
+
+        <h2> To Summarize </h2>
+
+        <p><br><br><br>
+
+The creation of a web page requires at least two files, <sub2>HTML</sub2> and <sub2>CSS</sub2>, from here we can relink our CSS to multiple pages to create a web site.
+<br><br>
+In more developed sites this same structure will continue to be used, sometimes extended through programming languages (i.e, JavaScript, Python, etc), or through the use of frameworks, which are HTML and CSS interpreters that enable certain automation and content administration tasks. 
+<br><br>
+However, do not forget the maxim of design <sub2>"less is more"</sub2>, so let's start by mastering this basic interaction between <sub2>HTML and CSS</sub2> to build on these foundations.
+       
+        </section>
+    
+</div>
+</div>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+// More info about config & dependencies:
+// - https://github.com/hakimel/reveal.js#configuration
+// - https://github.com/hakimel/reveal.js#dependencies
+Reveal.initialize({
+dependencies: [
+{ src: 'plugin/markdown/marked.js' },
+{ src: 'plugin/markdown/markdown.js' },
+{ src: 'plugin/notes/notes.js', async: true },
+{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+]
+});
+</script>
+</body>
+</html>
